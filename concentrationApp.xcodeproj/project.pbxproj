@@ -99,12 +99,9 @@
 		82305E80265A90F10035489D /* concentrationApp */ = {
 			isa = PBXGroup;
 			children = (
-				82305E81265A90F10035489D /* AppDelegate.swift */,
-				82305E83265A90F10035489D /* SceneDelegate.swift */,
 				82305E85265A90F10035489D /* ViewController.swift */,
 				82305E87265A90F10035489D /* Main.storyboard */,
-				82305E8A265A90F20035489D /* Assets.xcassets */,
-				82305E8C265A90F20035489D /* LaunchScreen.storyboard */,
+				82305EB4265A916A0035489D /* supportingFiles */,
 				82305E8F265A90F20035489D /* Info.plist */,
 			);
 			path = concentrationApp;
@@ -126,6 +123,17 @@
 				82305EA5265A90F20035489D /* Info.plist */,
 			);
 			path = concentrationAppUITests;
+			sourceTree = "<group>";
+		};
+		82305EB4265A916A0035489D /* supportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				82305E81265A90F10035489D /* AppDelegate.swift */,
+				82305E83265A90F10035489D /* SceneDelegate.swift */,
+				82305E8A265A90F20035489D /* Assets.xcassets */,
+				82305E8C265A90F20035489D /* LaunchScreen.storyboard */,
+			);
+			path = supportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
