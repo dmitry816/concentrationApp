@@ -9,12 +9,30 @@ import Foundation
 
 class Concentration {
     var cards = [Card]()
-    var indexOfOneAndOnlyFacedUpCard: Int?
+    var indexOfOneAndOnlyFacedUpCard: Int? {
+        get {
+            var foundIndex: Int?
+            for index in cards.indices {
+                if cards[index].isFacedUp {
+                    if foundIndex == nil {
+                        foundIndex = index
+                    } else {
+                        return nil
+                    }
+                }
+            }
+            return foundIndex
+        }
+        set {
+            
+        }
+    }
     
     init(numberOfPairsOfCards: Int) {
         for _ in 0..<numberOfPairsOfCards {
             let card = Card()
             cards += [card, card]
+            print("cards\(cards)")
         }
     }
     

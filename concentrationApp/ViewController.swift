@@ -22,11 +22,12 @@ class ViewController: UIViewController {
 
     @IBAction func touchCard(_ sender: UIButton) {
         flipCount += 1
+        // FIXME: print(cardButtons.firstIndex(of: sender))
         if let cardNumber = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardNumber)
             updateVuewFromModel()
         } else {
-            print("choosen card not in set")
+            print("choosen card not in set \(sender)")
         }
     }
     
